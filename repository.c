@@ -172,6 +172,9 @@ int repo_init(struct repository *repo,
 
 	repo_set_hash_algo(repo, format.hash_algo);
 
+	repo->repository_format_partial_clone = format.partial_clone;
+	format.partial_clone = NULL;
+
 	if (worktree)
 		repo_set_worktree(repo, worktree);
 
