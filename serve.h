@@ -1,7 +1,6 @@
 #ifndef SERVE_H
 #define SERVE_H
 
-struct strvec;
 struct serve_options {
 	unsigned advertise_capabilities;
 	unsigned stateless_rpc;
